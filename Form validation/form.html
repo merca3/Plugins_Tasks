@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+
+</head>
+
+<body>
+    <form id="register">
+        <div>
+            <input type="text" name="username" placeholder="Username*" required>
+        </div>
+        <div>
+            <input type="password" id="psw" name="psw" placeholder="Password*" required>
+        </div>
+        <div>
+            <input type="password" name="passwordRepeat" placeholder="Repeat Password*" required>
+        </div>
+        <div>
+            <input type="text" name="firstname" placeholder="First Name*" required>
+        </div>
+        <div>
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div>
+            <select name="country" required>
+                <option selected disabled>Country*</option>
+                <option>Latvia</option>
+                <option>Lithuania</option>
+                <option>Estonia</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div>
+            <div>
+                <label>Agree to terms and conditions*</label>
+                <input type="checkbox" name="checkbox" required>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Submit form"></input>
+        </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
